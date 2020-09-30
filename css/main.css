@@ -1,0 +1,21 @@
+.main-menu {
+  display: flex;
+  flex-direction: row;
+}
+.main-menu > .menu-item {
+  padding: 10px;
+}
+.main-menu li {
+  list-style-type: none;
+}
+.main-menu .submenu {
+  display: none;
+}
+.main-menu .menu-item:hover .submenu.show-on-hover {
+  display: block;
+  position: absolute;
+}
+.main-menu .menu-item:focus-within .submenu.show-on-click {
+  display: block;
+  position: absolute;
+}
